@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:  'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .circle-twet{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+  }
+  /* start header */
+  header{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+  header .nav-links{
+
+  }
+  header .nav-links a{
+    display: flex;
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
+  }
+  header .nav-links a:hover{
+    background-color: rgba(47, 51,54);
+    border-radius: 6px;
+  }
+  header .nav-links a i{
+
+  }
+  header .nav-links a span{
+    margin-left: 10px;
+  }
+  header .nav-links .tweet-calc{
+background-color: #1DA1F2;
+width: 90%;
+height: 40px;
+border-radius: 9999px;
+border: 1px solid black;
+cursor: pointer;
+transition: 0.3s;
+color: white;
+margin-top: 10px;
+  }
+  header .nav-links .tweet-calc:hover{
+background-color: #2684bf;
+  } 
+  header  .main-accont{
+  transition: 0.3s;
+  margin-top: 50px;
+  padding: 20px 0;
+  }
+  header  .main-accont:hover{
+    background-color: rgba(47, 51,54);
+    border-radius: 6px;
+  }
+  header .main-accont .inform{
+display: flex;
+color: white;
+  }
+  header .main-accont .inform img{
+ width: 40px;
+ height: 40px;
+ border-radius:50%;
+  }
+  header  .main-accont .inform span{
+margin-left: 10px;
+display: block;
+font-size: 14px;
+  }
+  header  .main-accont .inform .sic{
+    color: rgb(110, 118, 125);
+  }
+  header  .main-accont .inform i{
+  margin-left: 5px;
+  }
+  /* end header */
+  /* start main */
+  main{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+  }
+  main .flex-main{
+    display: flex;
+  }
+  /* end main */
+  /* start main feet */
+  main .flex-main .main-feet{
+    width: 60%; 
+    position: relative;
+  }
+  main .flex-main .main-feet::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color:rgb(47, 51, 54);
+    left: -15px;
+  }
+  main .flex-main .main-feet .top-home{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 5px;
+  }
+  main .main-feet .write-box{
+   margin: 20px 0 10px;
+  }
+  main .main-feet .write-box .write-inpot{
+    display: flex;
+    align-items: center;
+  }
+  main .main-feet .write-box .write-inpot img{
+  
+  }
+  main .main-feet .write-box input{
+    background-color: black;
+    border: none;
+    margin-left: 10px;
+  }
+  main .main-feet .write-box .write-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 10px;
+  }
+  main .main-feet .write-box .write-icons ul{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  main .main-feet .write-box .write-icons i{
+    font-size: 20px;
+    color: #1DA1F2;
+    padding: 0 5px;
+  }
+  main .main-feet .write-box .write-icons button{
+    background-color: #1DA1F2;
+    width: 100px;
+    height: 40px;
+    border-radius: 9999px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+  }
+  .feed-tweet{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid  rgb(47, 51, 54);
+    border-bottom: 1px solid  rgb(47, 51, 54);
+    padding: 10px 0;
+  }
+  .feed-tweet .det-feed-tweet{
+    margin-left: 12px;
+    flex: 2;
+  }
+  .feed-tweet .det-feed-tweet .top-feed-tweet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feed-tweet .det-feed-tweet .top-feed-tweet .name-feedtweet{
+    color: white;
+    font-size: 10px;
+  }
+  .feed-tweet .det-feed-tweet .top-feed-tweet .name-feedtweet span{
+    color: rgb(110, 118, 125);
+  }
+  .feed-tweet .det-feed-tweet .top-feed-tweet  i{
+    color: rgb(110, 118, 125);
+  }
+  .feed-tweet .det-feed-tweet .feed-tweet-text p{
+    color: white;
+    font-size: 11px;
+  }
+  .feed-tweet .det-feed-tweet .feed-tweet-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .feed-tweet .det-feed-tweet .feed-tweet-icon i{
+    color: rgb(110, 118, 125);
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  /* end main feet */
+  /* start side feet */
+  main .flex-main .side-feet{
+    width: 35%;
+    height: 100%;
+    margin-left: 10px;
+  }
+  .side-feet .Searsh-sweetr{
+    width: 100%;
+    height: 40px;
+    background-color:#212327 ;
+    border: none;
+    border-radius:9999px;
+    padding-left: 20px;
+  }
+  .side-feet .what{
+    display: flex;
+    background-color: #212327;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+  }
+  .side-feet .what h1{
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+  }
+  .side-feet .what .items-what{
+    padding: 5px 10px;
+    font-size: 13px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .side-feet .what .items-what::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #27292e;
+    left: 0;
+    bottom: 0;
+  }
+  .side-feet .what .items-what:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+  }
+  .side-feet .what .items-what .items-trending{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(110, 118, 125);
+  }
+  .side-feet .what .items-what .items-trending span,
+  .side-feet .what .items-what span
+  {
+    font-size: 13px;
+    color:rgb(110, 118, 125);
+  }
+  .side-feet .what .items-what .items-trending i{
+   cursor:pointer;
+  }
+  .side-feet .what .items-what p{
+    color: white;
+    font-size: 16px;
+  }
+  .side-feet .what a{
+    color: #1DA1F2;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  .side-feet .what a:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+  }
+  .side-feet .who{
+    display: flex;
+    background-color: #212327;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+  }
+  .side-feet .who h1{
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+  }
+  .side-feet .who .box-who{
+    padding: 5px 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .side-feet .who .box-who:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+  }
+  .side-feet .who .box-who img{
+
+  }
+  .side-feet .who .box-who p{
+    padding-left: 10px;
+    color: white;
+  }
+  .side-feet .who .box-who p span{
+    display: block;
+    color:rgb(110, 118, 125);
+  }
+  .side-feet .who .box-who .info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .side-feet .who .box-who .info a{
+    color: white;
+    background-color: black;
+    padding: 5px 18px;
+    border-radius: 140px;
+  }
+  .side-feet .who a{
+    color: #1DA1F2;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  .side-feet .who a:hover{
+    background-color: #1c1e22;
+    cursor: pointer;
+  }
+  /* end side feet */
